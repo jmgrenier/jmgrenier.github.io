@@ -2,9 +2,10 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import htmlMinifier from 'vite-plugin-html-minifier'
-import viteImagemin from '@vheemstra/vite-plugin-imagemin'
 import cleanPlugin from 'vite-plugin-clean'
 import ogPlugin from 'vite-plugin-open-graph';
+import Sitemap from 'vite-plugin-sitemap'
+import viteImagemin from '@vheemstra/vite-plugin-imagemin'
 import imageminMozjpeg from 'imagemin-mozjpeg'
 import imageminPngquant from 'imagemin-pngquant'
 
@@ -32,7 +33,12 @@ export default defineConfig({
             twitter: {
                 card: "summary_large_image"
             }
-        })
+        }),
+        Sitemap({
+            hostname: 'https://jmgrenier.ca',
+            exclude: ['/contact-form-success'],
+            robots: [{ userAgent: '*', disallow: '/contact-form-success' }]
+        }),
     ],
     build: {
         rollupOptions: {

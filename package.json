@@ -20,7 +20,8 @@
     "vite-plugin-clean": "^2.0.1",
     "vite-plugin-html-minifier": "^1.0.5",
     "vite-plugin-imagemin": "^0.6.1",
-    "vite-plugin-open-graph": "^2.0.6"
+    "vite-plugin-open-graph": "^2.0.6",
+    "vite-plugin-sitemap": "^0.8.2"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",
