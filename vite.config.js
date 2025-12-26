@@ -36,7 +36,7 @@ export default defineConfig({
         }),
         Sitemap({
             hostname: 'https://jmgrenier.ca',
-            exclude: ['/contact-form-success'],
+            exclude: ['/contact-form-success', '/404'],
             robots: [{ userAgent: '*', disallow: '/contact-form-success' }]
         }),
     ],
