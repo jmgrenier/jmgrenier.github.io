@@ -1,7 +1,7 @@
 {
   "name": "jmgrenier.github.io",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -19,7 +19,8 @@
     "vite": "^7.3.0",
     "vite-plugin-clean": "^2.0.1",
     "vite-plugin-html-minifier": "^1.0.5",
-    "vite-plugin-imagemin": "^0.6.1"
+    "vite-plugin-imagemin": "^0.6.1",
+    "vite-plugin-open-graph": "^2.0.6"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",
