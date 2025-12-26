@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/plus-jakarta-sans-v12-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/plus-jakarta-sans-v12-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/plus-jakarta-sans-v12-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/plus-jakarta-sans-v12-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/plus-jakarta-sans-v12-latin-700.woff2') format('woff2');
+}
+
+@theme {
+  --color-primary: #01607f;
+  --color-primary-dark: #004d66;
+  --color-secondary: #0f172a;
+  --color-surface: #f0f7f9;
+  --color-text-main: #334155;
+  --color-text-light: #5c6a80;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+.glass-card {
+  @apply bg-white border border-slate-100 shadow-lg rounded-xl transition-all duration-300;
+}
+
+input,
+textarea {
+  @apply outline-none w-full;
+}
