@@ -5,6 +5,7 @@ import htmlMinifier from 'vite-plugin-html-minifier'
 import cleanPlugin from 'vite-plugin-clean'
 import ogPlugin from 'vite-plugin-open-graph';
 import Sitemap from 'vite-plugin-sitemap'
+import webfontDownload from 'vite-plugin-webfont-dl';
 import viteImagemin from '@vheemstra/vite-plugin-imagemin'
 import imageminMozjpeg from 'imagemin-mozjpeg'
 import imageminPngquant from 'imagemin-pngquant'
@@ -39,6 +40,7 @@ export default defineConfig({
             exclude: ['/contact-form-success', '/404'],
             robots: [{ userAgent: '*', disallow: '/contact-form-success' }]
         }),
+        webfontDownload(),
     ],
     build: {
         rollupOptions: {
